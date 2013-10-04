@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!--
+    Copyright 2013 MagentoPush
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+    @category    MagentoPush
+    @package     MagentoPush_GuestManagement
+-->
+<config>
+    <modules>
+        <MagentoPush_GuestManagement>
+            <version>0.1.0</version>
+        </MagentoPush_GuestManagement>
+    </modules>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <guestmanagement before="Mage_Adminhtml">MagentoPush_GuestManagement_Adminhtml</guestmanagement>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <global>
+        <blocks>
+            <guestmanagement>
+                <class>MagentoPush_GuestManagement_Block</class>
+            </guestmanagement>
+        </blocks>
+        <helpers>
+            <guestmanagement>
+                <class>MagentoPush_GuestManagement_Helper</class>
+            </guestmanagement>
+        </helpers>
+        <models>
+            <guestmanagement>
+                <class>MagentoPush_GuestManagement_Model</class>
+            </guestmanagement>
+        </models>
+        <events>
+            <checkout_type_onepage_save_order_after>
+                <observers>
+                    <guestmanagement_save_order_observer>
+                        <class>guestmanagement/observer</class>
+                        <method>saveOrderAfter</method>
+                    </guestmanagement_save_order_observer>
+                </observers>
+            </checkout_type_onepage_save_order_after>
+        </events>
+    </global>
+    <adminhtml>
+        <layout>
+            <updates>
+                <guestmanagement>
+                    <file>guestmanagement.xml</file>
+                </guestmanagement>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>
