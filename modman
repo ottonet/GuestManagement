@@ -1,0 +1,11 @@
+app/code/local/MagentoPush/GuestManagement/Block/Customer/Grid.php app/code/local/MagentoPush/GuestManagement/Block/Customer/Grid.php
+app/code/local/MagentoPush/GuestManagement/Block/Customer.php app/code/local/MagentoPush/GuestManagement/Block/Customer.php
+app/code/local/MagentoPush/GuestManagement/controllers/Adminhtml/GuestManagement/IndexController.php app/code/local/MagentoPush/GuestManagement/controllers/Adminhtml/GuestManagement/IndexController.php
+app/code/local/MagentoPush/GuestManagement/etc/adminhtml.xml app/code/local/MagentoPush/GuestManagement/etc/adminhtml.xml
+app/code/local/MagentoPush/GuestManagement/etc/config.xml app/code/local/MagentoPush/GuestManagement/etc/config.xml
+app/code/local/MagentoPush/GuestManagement/etc/system.xml app/code/local/MagentoPush/GuestManagement/etc/system.xml
+app/code/local/MagentoPush/GuestManagement/Helper/Data.php app/code/local/MagentoPush/GuestManagement/Helper/Data.php
+app/code/local/MagentoPush/GuestManagement/Model/Guest.php app/code/local/MagentoPush/GuestManagement/Model/Guest.php
+app/code/local/MagentoPush/GuestManagement/Model/Observer.php app/code/local/MagentoPush/GuestManagement/Model/Observer.php
+app/design/adminhtml/default/default/layout/guestmanagement.xml app/design/adminhtml/default/default/layout/guestmanagement.xml
+app/etc/modules/MagentoPush_GuestManagement.xml app/etc/modules/MagentoPush_GuestManagement.xml

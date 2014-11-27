@@ -1,0 +1,14 @@
+{
+    "name": "patronik/guestmanagement",
+    "description": "Magento module for registering guest customers.",
+    "type": "magento-module", 
+    "authors": [
+        {
+            "name": "Vasyl Voina",
+            "email": "{unknown}@{unknown}"
+        }
+    ],
+    "require": {
+	"magento-hackathon/magento-composer-installer": "*"
+    }
+}
