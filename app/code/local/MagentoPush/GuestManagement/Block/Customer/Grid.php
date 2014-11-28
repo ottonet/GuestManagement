@@ -140,7 +140,7 @@ class MagentoPush_GuestManagement_Block_Customer_Grid extends Mage_Adminhtml_Blo
                 'actions'   => array(
                     array(
                         'caption'   => Mage::helper('guestmanagement')->__('Register'),
-                        'url'       => array('base'=> '*/*/register'),
+                        'url'       => Mage::getSingleton('adminhtml/url')->getUrl('adminhtml/guestmanagement/register'),
                         'field'     => 'email'
                     )
                 ),
